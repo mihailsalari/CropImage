@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpS-SK-SeA">
+                                <rect key="frame" x="16" y="140" width="288" height="288"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Ffv-e8-1FY"/>
+                                    <constraint firstAttribute="height" constant="288" id="Rfl-pQ-whw"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="scD-3S-Ydj" appends="YES" id="dh0-h4-M5y"/>
+                                    <outletCollection property="gestureRecognizers" destination="lk4-l5-toF" appends="YES" id="hZP-jH-oic"/>
+                                    <outletCollection property="gestureRecognizers" destination="Z9Y-Pt-GR2" appends="YES" id="ktx-Td-b5G"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-fR-8R2">
+                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R25-hb-vqV">
+                                        <rect key="frame" x="213.5" y="17" width="99" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0Td-Qd-7EQ"/>
+                                            <constraint firstAttribute="width" constant="99" id="rLx-8f-ALS"/>
+                                        </constraints>
+                                        <state key="normal" title="Choose Image"/>
+                                        <connections>
+                                            <action selector="chooseImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x41-qw-uqn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nus-La-YFL">
+                                        <rect key="frame" x="16" y="17" width="51" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="kkJ-jt-eH8"/>
+                                            <constraint firstAttribute="height" constant="30" id="syG-tp-TBG"/>
+                                        </constraints>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gig-hj-UXN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nus-La-YFL" firstAttribute="centerY" secondItem="M3l-fR-8R2" secondAttribute="centerY" id="8TE-6x-avw"/>
+                                    <constraint firstItem="Nus-La-YFL" firstAttribute="leading" secondItem="M3l-fR-8R2" secondAttribute="leading" constant="16" id="Bq1-Pl-iBE"/>
+                                    <constraint firstAttribute="trailing" secondItem="R25-hb-vqV" secondAttribute="trailing" constant="7.5" id="gDO-bo-lgT"/>
+                                    <constraint firstAttribute="height" constant="64" id="lQa-y0-Qv3"/>
+                                    <constraint firstItem="R25-hb-vqV" firstAttribute="centerY" secondItem="M3l-fR-8R2" secondAttribute="centerY" id="xGf-j1-kjk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M3l-fR-8R2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Ef-Qa-PFr"/>
+                            <constraint firstItem="lpS-SK-SeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GE8-p2-sve"/>
+                            <constraint firstItem="M3l-fR-8R2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aHn-ql-Fmq"/>
+                            <constraint firstItem="M3l-fR-8R2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tBm-Eg-ztd"/>
+                            <constraint firstItem="lpS-SK-SeA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zRM-vc-VzJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickedImage" destination="lpS-SK-SeA" id="RL9-iM-59S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lk4-l5-toF">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="mJz-tj-hhx"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="Z9Y-Pt-GR2">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="KRl-M1-vCL"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="scD-3S-Ydj">
+                    <connections>
+                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="w72-13-1lZ"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116" y="117"/>
+        </scene>
+    </scenes>
+</document>
